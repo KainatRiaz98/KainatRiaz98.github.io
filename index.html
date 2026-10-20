@@ -417,9 +417,8 @@
   <header class="masthead">
     <h1 class="name">Kainat Riaz</h1>
     <p class="standfirst">
-      AI researcher working on uncertainty and introspection in LLM agents: test-time
-      reinforcement learning, epistemic uncertainty, and human-in-the-loop agent
-      decision-making.
+      AI researcher working on LLM agents: test-time reinforcement learning, epistemic
+      uncertainty, and human-in-the-loop decision-making for agents.
     </p>
     <div class="contact">
       <a href="mailto:kriaz.msee20seecs@seecs.edu.pk">kriaz.msee20seecs@seecs.edu.pk</a>
@@ -504,24 +503,24 @@
         </div>
         <ul class="points">
           <li>Co-first author of <em>Epistemic Uncertainty for Test-Time Discovery</em> (arXiv:2605.11328, under review at ICLR 2027), joint work with Prof. John M. Cioffi's group at Stanford University.</li>
-          <li>Designed a mutual-information-shaped advantage with nuclear-norm regularization for test-time RL that sustains <strong>~2.2× higher solution diversity</strong> than the clipped-IS baseline and raises maximum reward on 3 of 4 scientific-discovery benchmarks (Erdős minimum overlap, autocorrelation inequalities, GPU kernel optimization).</li>
-          <li>Ran large-scale multi-node RL experiments (SLURM, up to <strong>120B-parameter models</strong>) spanning mathematics, GPU-kernel, algorithm-engineering, and computational-biology benchmarks; designed and executed ablation and robustness studies for peer review.</li>
-          <li>Work in progress, <em>when-to-ask</em>: investigating whether cross-trajectory divergence of mid-layer hidden states predicts when a long-horizon coding agent should ask for human input, earlier and more accurately than output-divergence baselines. Built the N-trajectory white-box harness, asynchronous hidden-state alignment, and AUROC/lead-time evaluation suite.</li>
+          <li>Designed a mutual-information-shaped advantage with nuclear-norm regularization for test-time RL. It keeps about <strong>2.2× more solution diversity</strong> than the clipped-IS baseline and improves maximum reward on 3 of 4 scientific-discovery benchmarks (Erdős minimum overlap, autocorrelation inequalities, GPU kernel optimization).</li>
+          <li>Ran multi-node RL experiments on SLURM with models up to <strong>120B parameters</strong>, across mathematics, GPU-kernel, algorithm-engineering and computational-biology benchmarks; designed and ran the ablation and robustness studies for peer review.</li>
+          <li>Ongoing work (<em>when-to-ask</em>): testing whether divergence of mid-layer hidden states across trajectories can tell a long-horizon coding agent when to ask a human for input, earlier and more accurately than output-divergence baselines. Built the N-trajectory white-box harness, asynchronous hidden-state alignment, and the AUROC/lead-time evaluation suite.</li>
         </ul>
       </article>
 
       <article class="entry">
         <div class="entry-head">
           <div>
-            <h3 class="entry-title">Research Assistant</h3>
+            <h3 class="entry-title">Graduate Researcher / Research Assistant</h3>
             <p class="entry-org">Robotics &amp; Machine Intelligence Lab, NUST</p>
           </div>
-          <span class="entry-date">02/2022 – 01/2023</span>
+          <span class="entry-date">2020 – 01/2023</span>
         </div>
         <ul class="points">
-          <li>Led research on combating adversarial attacks through experimentation with state-of-the-art GANs, deep-learning denoisers, and blind deconvolution methods.</li>
-          <li>Designed targeted and deep black-box adversarial attacks on vision systems built with handcrafted features; performed statistical, qualitative, and quantitative analysis across robotics and computer-vision pipelines.</li>
-          <li>Designed an automatic loop-closure detector evaluated on the KITTI dataset; prepared materials for peer-reviewed journal submissions.</li>
+          <li>Led research on defending against adversarial attacks using state-of-the-art GANs, deep-learning denoisers and blind deconvolution.</li>
+          <li>Designed targeted and deep black-box adversarial attacks on vision systems built with handcrafted features; analysed results statistically, qualitatively and quantitatively across robotics and computer-vision pipelines.</li>
+          <li>Designed an automatic loop-closure detector evaluated on the KITTI dataset; prepared material for peer-reviewed journal submissions.</li>
         </ul>
       </article>
 
@@ -541,9 +540,9 @@
           <span class="entry-date">06/2026 – Present</span>
         </div>
         <ul class="points">
-          <li>Own the semantic/ontology layer and the agent runtime of AiX, an air-gapped, Palantir Foundry-class operational platform delivered for Blackford Technologies (UAE); authored <strong>20+ architecture decision records</strong> across both layers.</li>
-          <li>Raised agent accuracy from <strong>7/12 to 12/12</strong> on three consecutive runs of a 12-question benchmark over an OSDU subsurface dataset (95,260 objects, 243,957 edges) by adding a deterministic multi-hop path planner and precise model-facing tool descriptions, clearing the two-hop reverse-traversal queries that had been the ceiling.</li>
-          <li>Eliminated the runtime's worst failure mode, confabulated success: the agent now confirms writes by read-back instead of blind retry, receives real tool errors rather than sanitised ones, and distinguishes an invalid request from an upstream outage.</li>
+          <li>Own the semantic/ontology layer and the agent runtime of AiX, an air-gapped operational platform in the Palantir Foundry class, delivered for Blackford Technologies (UAE). Wrote <strong>20+ architecture decision records</strong> across both layers.</li>
+          <li>Raised agent accuracy from <strong>7/12 to 12/12</strong>, on three consecutive runs, on a 12-question benchmark over an OSDU subsurface dataset (95,260 objects, 243,957 edges). Added a deterministic multi-hop path planner and rewrote the tool descriptions the model sees, which fixed the two-hop reverse-traversal queries the agent could not answer before.</li>
+          <li>Fixed the runtime reporting success on failed actions: the agent now checks each write by reading it back instead of retrying blindly, gets the real tool errors instead of sanitised ones, and can tell an invalid request from an upstream outage.</li>
         </ul>
       </article>
 
@@ -556,10 +555,10 @@
           <span class="entry-date">09/2023 – 05/2026</span>
         </div>
         <ul class="points">
-          <li>Developed an autonomous AI agent for cloud-infrastructure monitoring, troubleshooting, and automated issue resolution across multi-cloud environments, reducing downtime and manual intervention.</li>
-          <li>Built a unit-testing framework for AI agents using DeepEval, integrated into GitHub workflows to automate validation; implemented a DSPy prompt optimizer to cut prompt-engineering time.</li>
-          <li>Designed a proprietary dataset and fine-tuned a small LLM on the company codebase, creating a privacy-compliant code assistant; reduced model training time from <strong>2.5 hours to 10–20 minutes</strong>.</li>
-          <li>Conducted adversarial evaluations with vulnerability scanners to patch security weaknesses in deployed LLMs; optimized fine-tuned LLMs for deployment on smaller GPUs and CPUs.</li>
+          <li>Developed an autonomous AI agent for cloud-infrastructure monitoring, troubleshooting and automated issue resolution across multi-cloud environments, reducing downtime and manual work.</li>
+          <li>Built a unit-testing framework for AI agents with DeepEval, run inside GitHub workflows; added a DSPy prompt optimizer to cut prompt-engineering time.</li>
+          <li>Built a proprietary dataset and fine-tuned a small LLM on the company codebase as a privacy-compliant code assistant; brought training time down from <strong>2.5 hours to 10–20 minutes</strong>.</li>
+          <li>Ran adversarial evaluations with vulnerability scanners and patched security weaknesses in deployed LLMs; optimized fine-tuned LLMs to run on smaller GPUs and CPUs.</li>
         </ul>
       </article>
 
@@ -572,7 +571,7 @@
           <span class="entry-date">08/2024 – 01/2025</span>
         </div>
         <ul class="points">
-          <li>Single-handedly delivered a production-ready Arabic-language RAG chatbot for a Saudi client: Elasticsearch migration, embedding-based semantic search, citation-grounded answers, and the full backend (APIs, authentication, PostgreSQL).</li>
+          <li>Built and delivered, as the sole developer, a production Arabic-language RAG chatbot for a Saudi client: Elasticsearch migration, embedding-based semantic search, answers with citations, and the full backend (APIs, authentication, PostgreSQL).</li>
         </ul>
       </article>
 
@@ -585,9 +584,9 @@
           <span class="entry-date">01/2023 – 09/2023</span>
         </div>
         <ul class="points">
-          <li>Fine-tuned Stable Diffusion (DreamBooth, textual inversion) for consistent storybook character design; implemented ControlNet for a furniture-design mockup workflow.</li>
-          <li>Trained YOLOv8 on a custom dataset for automated retail inventory tracking; built a hybrid CNN/rule-based classifier achieving <strong>96% accuracy</strong> in radar-based patient fall detection.</li>
-          <li>Led RFP development for a Defense Ministry Green-AI project proposing AI-driven agricultural solutions.</li>
+          <li>Fine-tuned Stable Diffusion (DreamBooth, textual inversion) for consistent storybook characters; used ControlNet for a furniture-design mockup workflow.</li>
+          <li>Trained YOLOv8 on a custom dataset for retail inventory tracking; built a hybrid CNN/rule-based classifier with <strong>96% accuracy</strong> for radar-based patient fall detection.</li>
+          <li>Led RFP development for a Defense Ministry Green-AI project proposing AI-based agricultural solutions.</li>
         </ul>
       </article>
 
@@ -618,7 +617,7 @@
         </div>
         <ul class="points">
           <li>10Pearls' national competition for women in technology, held across Islamabad, Lahore and Karachi with <strong>~1,000 participants</strong>.</li>
-          <li>Built the platform that auto-scored submissions on event day and set the track's evaluation criteria; mentored participating teams throughout the competition and judged the final submissions.</li>
+          <li>Built the platform that scored submissions automatically on event day, set the track's evaluation criteria, mentored teams throughout and judged the finals.</li>
         </ul>
       </article>
     </div>
